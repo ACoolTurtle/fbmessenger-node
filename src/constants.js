@@ -1,4 +1,4 @@
-export const FB_API_VERSION = 'v2.9';
+export const FB_API_VERSION = 'v7.0';
 export const BUTTON_TYPES = [
   'web_url',
   'postback',
