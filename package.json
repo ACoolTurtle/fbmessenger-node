@@ -20,9 +20,12 @@
     "test": "cross-env NODE_ENV=test jest",
     "travis-coveralls": "npm run test && cat ./coverage/lcov.info | coveralls"
   },
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rickydunlop/fbmessenger-node.git"
+    "url": "git+https://github.com/ACoolTurtle/fbmessenger-node.git"
   },
   "contributors": {
     "name": "Ricky Dunlop"
@@ -45,7 +48,8 @@
     "eslint-plugin-import": "^2.13.0",
     "husky": "^0.14.3",
     "jest": "^23.2.0",
-    "nock": "^10.0.0"
+    "nock": "^10.0.0",
+    "precommit": "^1.2.2"
   },
   "dependencies": {
     "@commitlint/cli": "^7.0.0",
